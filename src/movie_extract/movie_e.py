@@ -44,8 +44,8 @@ def get_key():
 def req2df(load_dt='20210101', url_param={}):
     code, data = req(load_dt, url_param)
     movie = data['boxOfficeResult']['dailyBoxOfficeList']
-    print(f"API Response Data for {url_param}: {data}")
     df = pd.DataFrame(movie)
+    print(df)
     return df
 
 def req(load_dt="20210101", url_param={}):
@@ -64,9 +64,7 @@ def gen_url(dt="20210101", url_param={}):
     for key, value in url_param.items():
         url = url + f"&{key}={value}"
 
-    print("*^=" * 10)
-    print(url)
-    print("*^=" * 10)
+    print(f"url: {url}")
     return url
 
 ice_breaking()
