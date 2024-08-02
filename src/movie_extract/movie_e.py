@@ -67,7 +67,7 @@ def gen_url(dt="20210101", url_param={}):
     print(f"url: {url}")
     return url
 
-ice_breaking()
+# ice_breaking()
 
 
 
