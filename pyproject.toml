@@ -1,0 +1,27 @@
+[project]
+name = "movie_extract"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Seokxkyu", email = "kyuseok000@gmail.com"},
+]
+dependencies = [
+    "pandas>=2.2.2",
+    "requests>=2.32.3",
+]
+requires-python = ">3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src/", "."]
