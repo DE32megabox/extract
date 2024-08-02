@@ -1,4 +1,4 @@
-# 제목
+# movie_extract/movie_e.py
 해당 년월의 영화 데이터 추출 모듈
 
 ## 설치방법
