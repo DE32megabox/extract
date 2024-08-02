@@ -12,7 +12,6 @@ git clone https://github.com/DE32megabox/extract.git
 pdm init
 pdm install
 source .venv/bin/activate
-pdm add -dG test pytest pytest-cov
 ```
 - 개발환경에 브랜치 설정
 ```
