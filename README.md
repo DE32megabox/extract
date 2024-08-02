@@ -8,6 +8,7 @@ git clone https://github.com/DE32megabox/extract.git
 
 - repository 설치 이후 환경설정 
 pdm init
+pdm install
 source .venv/bin/activate
 pdm add -dG test pytest pytest-cov
 
@@ -21,7 +22,7 @@ git checkout dev/d1.0.0
 
 ## 실행예제
 ```
-ice_breaking()
+
 ```
 
 ```
