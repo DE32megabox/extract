@@ -16,8 +16,8 @@ $ cd megabox/code/movie_extract
 3. 가상 환경을 활성화하고 패키지를 설치합니다.
 ```bash
 $ pdm init
-$ pdm install
 $ source .venv/bin/activate
+$ pdm install
 ```
 
 ## 실행예제
