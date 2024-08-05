@@ -1,6 +1,6 @@
 [project]
 name = "movie_extract"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "Seokxkyu", email = "kyuseok000@gmail.com"},
@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "pandas>=2.2.2",
     "requests>=2.32.3",
+    "pyarrow>=17.0.0",
 ]
 requires-python = ">3.9"
 readme = "README.md"

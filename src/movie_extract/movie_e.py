@@ -41,11 +41,17 @@ def get_key():
     key = os.getenv('MOVIE_API_KEY')
     return key
 
+def df2parquet(load_dt='20210101', url_param={}):
+    df = req2df(load_dt, url_param)
+    df['load_dt'] = load_dt
+    print(df)
+    df.to_parquet('~/megabox/tmp/movie_parquet', partition_cols=['load_dt'])
+    return df
+
 def req2df(load_dt='20210101', url_param={}):
     code, data = req(load_dt, url_param)
     movie = data['boxOfficeResult']['dailyBoxOfficeList']
     df = pd.DataFrame(movie)
-    print(df)
     return df
 
 def req(load_dt="20210101", url_param={}):
