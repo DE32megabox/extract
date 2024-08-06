@@ -21,12 +21,3 @@ git checkout release/d1.0.0
 git branch dev/d1.0.0
 git checkout dev/d1.0.0
 ```
-
-## 실행예제
-```
-
-```
-
-```
-코드를 실행하면 나오는 내용에 대한 코드
-```
